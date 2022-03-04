@@ -1,8 +1,10 @@
-import React from "react";
-import CustomRouter from "./Router";
+import React, { useState } from "react";
+import CustomRouter from "components/Router";
+import { authService } from "fb";
 
 function App() {
-  return <CustomRouter />
+  const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
+  return <CustomRouter isLoggedIn={isLoggedIn} />;
 }
 
 export default App;
