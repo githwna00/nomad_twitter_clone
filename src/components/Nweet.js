@@ -1,4 +1,4 @@
-import { dbService } from "fb";
+import { dbService, storageService } from "fb";
 import React, { useState } from "react";
 
 const Nweet = ({ nweetObj, isOwner }) => {
@@ -9,6 +9,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
     const ok = window.confirm("Are you suer you watn to delete this nweet?");
     if (ok) {
       await dbService.doc(`nweets/${nweetObj.id}`).delete();
+      await storageService.refFromURL(nweetObj.attachmentUrl).delete();
     }
   };
   const toggleEditing = () => setEditing((prev) => !prev);
