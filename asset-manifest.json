@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/github.io/nomad_twitter_clone/static/js/main.66d441c3.js",
-    "index.html": "/github.io/nomad_twitter_clone/index.html",
-    "main.66d441c3.js.map": "/github.io/nomad_twitter_clone/static/js/main.66d441c3.js.map"
+    "main.js": "/nomad_twitter_clone/static/js/main.59842180.js",
+    "index.html": "/nomad_twitter_clone/index.html",
+    "main.59842180.js.map": "/nomad_twitter_clone/static/js/main.59842180.js.map"
   },
   "entrypoints": [
-    "static/js/main.66d441c3.js"
+    "static/js/main.59842180.js"
   ]
 }
